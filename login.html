@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesion</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="password.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+
+<body>
+    <center>
+    <div class="blanco" align="center">
+        <h1 class="tituloPrin">LOGIN</h1>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <form id="frmregistrar" class="grupo-entradas" method="post" action="login.php">
+        <input id="email" type="email" class="cajaentradatexto" placeholder="Correo" required pattern=".+@gmail.com" autofocus name="correo"><br>
+        <input id="password" type="password" class="cajaentradatexto"placeholder="Contraseña" required autofocus minlength="10" name="contra">
+        <button id="show_password" class="btn_mirar" type="button" onclick="mostrarPassword()"> <span class="fa fa-eye-slash icon"></span></button><br>
+        <div class="rec_contra">
+        <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+        </div>
+    <br><button class="sign" type="button">Sign in</button>
+    <br>
+    <p class="sesion">----------------  O inicia sesion con  ----------------</p>
+    <img class="redes" src="imagenes/facebook.png">
+    <img class="redes" src="imagenes/google.png">
+    <img class="redes" src="imagenes/twitter.png">
+
+    </form>
+    </div>
+    </center>
+</body>
+</html>

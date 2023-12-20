@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar contraseña</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="password.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+
+<body>
+    <center>
+    <div class="blanco" align="center">
+        <h1 class="tituloPrin">LOGIN</h1>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <form id="frmregistrar" class="grupo-entradas" method="post" action="login.php">
+        <input type="email" class="cajaentradatexto" placeholder="Correo" required pattern=".+@gmail.com" autofocus name="correo"><br>
+        <button onclick="recuperar()" >Recuperar contraseña</button>
+    </form>
+    </div>
+    </center>
+</body>
+</html>
